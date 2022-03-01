@@ -16,7 +16,7 @@ class locale
      */
     public function handle($request, Closure $next)
     {
-
+       // $app_url = env('APP_URL');
         $availableLocale = array('en','bn');
 
         if(Session::has('APP_LOCALE')){
